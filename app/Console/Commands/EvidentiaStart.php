@@ -56,7 +56,13 @@ class EvidentiaStart extends Command
 
         $this->line('Setting environment file');
         exec("cat /dev/null > .env");
-        exec('echo "APP_NAME=Evidentia" >> .env');
+        if($type == "docker"){
+            exec('echo "APP_NAME=Evidentia" >> .env');
+        }
+        if($type == "vagrant"){
+            exec('echo "APP_NAME=homestead" >> .env');
+        }
+        
         exec('echo "APP_ENV=local" >> .env');
         exec('echo "APP_KEY=" >> .env');
         exec('echo "APP_DEBUG=true" >> .env');
@@ -69,16 +75,19 @@ class EvidentiaStart extends Command
         if($type == "docker"){
             exec('echo "DB_HOST=mysql" >> .env');
             exec('echo "DB_PORT=3306" >> .env');
+            exec('echo "DB_DATABASE=evidentia" >> .env');
+            exec('echo "DB_USERNAME=evidentia" >> .env');
         }
 
         if($type == "vagrant"){
             exec('echo "DB_HOST=localhost" >> .env');
             exec('echo "DB_PORT=33060" >> .env');
+            exec('echo "DB_DATABASE=homestead" >> .env');
+            exec('echo "DB_USERNAME=homestead" >> .env');
         }
 
 
-        exec('echo "DB_DATABASE=evidentia" >> .env');
-        exec('echo "DB_USERNAME=evidentia" >> .env');
+        
         exec('echo "DB_PASSWORD=secret" >> .env');
         exec('echo "DB_CHARSET=utf8" >> .env');
         exec('echo "DB_COLLATION=utf8_unicode_ci" >> .env');
