@@ -1,7 +1,6 @@
 <p align="center">
   
-[![Actions Status](https://github.com/drorganvidez/evidentia/workflows/CI/badge.svg)](https://github.com/drorganvidez/evidentia/actions) 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![CI / CD Pipeline](https://github.com/innosoft-evidentia-3/innosoft-evidentia-3/actions/workflows/cicd.yml/badge.svg)](https://github.com/innosoft-evidentia-3/innosoft-evidentia-3/actions/workflows/cicd.yml)
 </p>
 
 <p align="center">
