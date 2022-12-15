@@ -5,19 +5,19 @@
 
 <p align="center">
 
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=drorganvidez_evidentia&metric=bugs)](https://sonarcloud.io/dashboard?id=drorganvidez_evidentia)
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=drorganvidez_evidentia&metric=code_smells)](https://sonarcloud.io/dashboard?id=drorganvidez_evidentia)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=drorganvidez_evidentia&metric=coverage)](https://sonarcloud.io/dashboard?id=drorganvidez_evidentia)
-[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=drorganvidez_evidentia&metric=duplicated_lines_density)](https://sonarcloud.io/dashboard?id=drorganvidez_evidentia)
-[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=drorganvidez_evidentia&metric=ncloc)](https://sonarcloud.io/dashboard?id=drorganvidez_evidentia)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=drorganvidez_evidentia&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=drorganvidez_evidentia)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=drorganvidez_evidentia&metric=alert_status)](https://sonarcloud.io/dashboard?id=drorganvidez_evidentia)
-[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=drorganvidez_evidentia&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=drorganvidez_evidentia)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=drorganvidez_evidentia&metric=security_rating)](https://sonarcloud.io/dashboard?id=drorganvidez_evidentia)
-[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=drorganvidez_evidentia&metric=sqale_index)](https://sonarcloud.io/dashboard?id=drorganvidez_evidentia)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=drorganvidez_evidentia&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=drorganvidez_evidentia)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=innosoft-evidentia-3_innosoft-evidentia-3&metric=bugs)](https://sonarcloud.io/summary/new_code?id=innosoft-evidentia-3_innosoft-evidentia-3)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=innosoft-evidentia-3_innosoft-evidentia-3&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=innosoft-evidentia-3_innosoft-evidentia-3)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=innosoft-evidentia-3_innosoft-evidentia-3&metric=coverage)](https://sonarcloud.io/summary/new_code?id=innosoft-evidentia-3_innosoft-evidentia-3)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=innosoft-evidentia-3_innosoft-evidentia-3&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=innosoft-evidentia-3_innosoft-evidentia-3)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=innosoft-evidentia-3_innosoft-evidentia-3&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=innosoft-evidentia-3_innosoft-evidentia-3)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=innosoft-evidentia-3_innosoft-evidentia-3&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=innosoft-evidentia-3_innosoft-evidentia-3)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=innosoft-evidentia-3_innosoft-evidentia-3&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=innosoft-evidentia-3_innosoft-evidentia-3)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=innosoft-evidentia-3_innosoft-evidentia-3&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=innosoft-evidentia-3_innosoft-evidentia-3)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=innosoft-evidentia-3_innosoft-evidentia-3&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=innosoft-evidentia-3_innosoft-evidentia-3)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=innosoft-evidentia-3_innosoft-evidentia-3&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=innosoft-evidentia-3_innosoft-evidentia-3)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=innosoft-evidentia-3_innosoft-evidentia-3&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=innosoft-evidentia-3_innosoft-evidentia-3)
 </br>
-[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/dashboard?id=drorganvidez_evidentia)
+[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/summary/new_code?id=innosoft-evidentia-3_innosoft-evidentia-3)
 </p>
 
 **evidentia.cloud** es un sistema de gestión automática de evidencias de trabajos de alumnos y alumnas. Fue originalmente pensado para las Jornadas InnoSoft Days organizadas en el ámbito de la asignatura Evolución y Gestión de la Configuración.
