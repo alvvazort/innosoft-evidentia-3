@@ -5,7 +5,9 @@ use App\Http\Controllers\DownloadController;
 use App\Http\Controllers\MeetingSecretaryController;
 use App\Http\Controllers\MeetingController;
 use App\Http\Controllers\EvidenceController;
+use App\Http\Controllers\KanbanController;
 use App\Http\Controllers\TaskController;
+use App\Http\Controllers\LectureDashboardController;
 use App\Http\Controllers\SignController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -311,6 +313,23 @@ Route::group(['prefix' => '{instance}', 'middleware' => ['checkblock']], functio
     });
 
     /**
+     * KANBAN
+     */
+    Route::get('/kanban/list/', 'KanbanController@list')->name('kanban.list');
+    Route::get('/kanban/view/{id}', 'KanbanController@view')->name('kanban.view');
+    Route::get('/kanban/create', 'KanbanController@create')->name('kanban.create');
+    Route::post('/kanban/new', 'KanbanController@new')->name('kanban.new');
+    Route::post('/kanban/remove', 'KanbanController@remove_kanban')->name('kanban.remove_kanban');
+    Route::get('/kanban/list/export/{ext}',[KanbanController::class , 'export'])->name('kanban.list.export');
+
+     /**
+     *  ISSUES
+     */
+    Route::get('/kanban/view/{id}/issue/create/', 'KanbanController@create_issue')->name('kanban.create_issue');
+    Route::post('/kanban/view/{id}/issue/new/', 'KanbanController@new_issue')->name('kanban.view.issue.new');
+
+   
+    /**
      *  ATTENDEES
      */
     Route::get('/attendee/list/', 'AttendeeController@list')->name('attendee.list');
@@ -391,6 +410,9 @@ Route::group(['prefix' => '{instance}', 'middleware' => ['checkblock']], functio
     Route::get('/lecture/user/list','ManagementController@user_list')->name('lecture.user.list');
     Route::get('/lecture/evidence/list','ManagementController@evidence_list')->name('lecture.evidence.list');
     Route::get('/lecture/meeting/list','ManagementController@meeting_list')->name('lecture.meeting.list');
+        # Lecture filemanager
+    Route::get('/lecture/user/{id}/filemanager', 'ManagementController@user_filemanager')->name('lecture.user.filemanager');
+    Route::get('/lecture/user/{user_id}/filemanager/evidence/{evidence_id}/proof/{proof_id}/verify', 'ManagementController@verify_proof')->name('lecture.proof.verify');
 
     Route::middleware(['checkroles:LECTURE'])->group(function () {
         Route::get('/lecture/config', 'ConfigController@config')->name('lecture.config');
@@ -473,5 +495,10 @@ Route::group(['prefix' => '{instance}', 'middleware' => ['checkblock']], functio
      *  GIT
      */
     Route::get('/updates','GitController@list')->name('updates.list');
+
+    /**
+     *  TEACHER ESTADISTICS DASHBOARD 
+     */
+    Route::get('lecture/dashboard','LectureDashboardController@view')->name('dashboard.view');
 
 });
