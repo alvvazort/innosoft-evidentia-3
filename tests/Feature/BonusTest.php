@@ -26,7 +26,7 @@ class BonusTest extends TestCase
     }
 
 
-private function loginWithSecreatario1(){
+    private function loginWithSecreatario1(){
         $request = [
             'username' => 'secretario1',
             'password' => 'secretario1'
@@ -67,6 +67,53 @@ private function loginWithSecreatario1(){
         $response = $this->post('/secretary/bonus/create',$request);
         $response->assertStatus(400);
 
-
     }
+
+
+    private function editBonusPositive(){
+        $this->loginWithSecretario1();
+
+        $requestCreate = [
+            'reason' => 'Esto es una prueba',
+            'hours'  => '1',
+            'users'  => User::all()  
+        ];
+
+        $this->post('/secretary/bonus/create',$request);
+
+        $requestEdit = [
+            'reason' => 'Esto es una prueba para editar',
+            'hours'  => '1',
+            'users'  => User::all()  
+        ];
+
+        $response = $this->post('/secretary/bonus/save',$requestEdit);
+        $response->assertStatus(302);
+        
+    }
+
+    private function editBonusNegative(){
+
+        $this->loginWithSecretario1();
+
+        $requestCreate = [
+            'reason' => 'Esto es una prueba',
+            'hours'  => '1',
+            'users'  => User::all()  
+        ];
+
+        $this->post('/secretary/bonus/create',$request);
+
+        $requestEdit = [
+            'reason' => '',
+            'hours'  => '1',
+            'users'  => User::all()  
+        ];
+
+        $response = $this->post('/secretary/bonus/save',$requestEdit);
+        $response->assertStatus(302);
+        
+    }
+
+
 }
