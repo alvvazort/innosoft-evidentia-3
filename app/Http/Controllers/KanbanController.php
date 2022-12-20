@@ -36,7 +36,7 @@ class KanbanController extends Controller
 
     public function list()
     {
-        $kanban = Kanban::where(['user_id' => Auth::id(),'last' => true])->get();
+        $kanban = Kanban::all();
         $instance = \Instantiation::instance();
 
         $kanban = $kanban->reverse();

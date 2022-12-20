@@ -15,7 +15,7 @@
   
 <h5> Evidencias totales: {{$total_evidences_not_draft}}</h5>
 
-<h5> Usuarios Totales: {{$total_users}}</h5>
+<h5> Número total de usuarios: {{$total_users}}</h5>
 
 <h5> Media de evidencias por usuario: {{$evidences_per_user}}</h5>
 
